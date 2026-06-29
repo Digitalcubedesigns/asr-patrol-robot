@@ -1,0 +1,50 @@
+# ============================================================
+# ASR Patrol Robot — Patrol Waypoints Configuration
+# Edit these coordinates to match your site map
+# DigitalCubeDesigns | digitalcubedesigns.com
+# ============================================================
+# How to get coordinates:
+#   1. Launch robot + SLAM
+#   2. Open RViz2
+#   3. Use "Publish Point" tool to click on map
+#   4. Note X, Y coordinates from terminal
+#   5. Update waypoints below
+# ============================================================
+
+waypoints:
+  - name: "Gate Entrance"
+    x: 0.0
+    y: 0.0
+    yaw: 0.0
+
+  - name: "North Perimeter"
+    x: 10.0
+    y: 0.0
+    yaw: 1.57
+
+  - name: "North-East Corner"
+    x: 10.0
+    y: 10.0
+    yaw: 3.14
+
+  - name: "East Perimeter"
+    x: 0.0
+    y: 10.0
+    yaw: -1.57
+
+  - name: "South Perimeter"
+    x: -5.0
+    y: 5.0
+    yaw: 0.0
+
+  - name: "Main Building Front"
+    x: 2.0
+    y: 5.0
+    yaw: 0.0
+
+# Patrol settings
+patrol_settings:
+  loop: true                  # Repeat patrol continuously
+  waypoint_timeout: 60        # Max seconds per waypoint
+  pause_at_waypoint: 3        # Seconds to wait at each point
+  speed: 0.3                  # Max speed m/s (LIMO Pro max = 1.0)
