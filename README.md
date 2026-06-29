@@ -143,7 +143,7 @@ asr_robot/
 
 # Clone the repository
 
-git clone https://github.com/YOUR_USERNAME/asr-patrol-robot.git
+git clone https://github.com/Digitalcubedesigns/asr-patrol-robot.git
 
 cd asr-patrol-robot
 
